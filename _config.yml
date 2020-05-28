@@ -1,23 +1,14 @@
-url: http://csinva.github.io
+url: http://timjbaer.github.io
 baseurl: ""
 
 # Site Settings
-title: Chandan Singh
-description: "Chandan Singh Homepage"
-keywords: "Chandan Singh, Machine Learning, Berkeley, Interpretability, Explainability"
+title: Tim Baer
+description: "Tim Baer Homepage"
+keywords: "Tim Baer, Numerical Linear Algebra, Graph, Tensor, LPNA, Illinois"
 collections:
- research_ovws:
-    name: research_ovws
-    output: true
- blog:
-    name: blog
-    output: true
  notes:
     name: Notes
     documentation: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
-    output: true
- timeline_blurbs:
-    name: timeline_blurbs
     output: true
 markdown: kramdown
 highlighter: rouge
