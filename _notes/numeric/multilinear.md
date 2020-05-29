@@ -1,6 +1,6 @@
 ---
 layout: notes
-title: multigrid
+title: multilinear
 category: numeric
 ---
 
