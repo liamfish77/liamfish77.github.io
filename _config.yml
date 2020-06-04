@@ -1,10 +1,10 @@
-url: http://timjbaer.github.io
+url: http://liamfish77.github.io
 baseurl: ""
 
 # Site Settings
-title: Tim Baer
-description: "Tim Baer Homepage"
-keywords: "Tim Baer, Numerical Linear Algebra, Graph, Tensor, LPNA, Illinois"
+title: Liam Fisher
+description: "Liam Fisher Homepage"
+keywords: "Liam Fisher, Philosophy, Drum, Lawrence, Spanish, Coffee"
 collections:
  notes:
     name: Notes
