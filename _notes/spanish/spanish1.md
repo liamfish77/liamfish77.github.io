@@ -1,8 +1,8 @@
 ---
 layout: notes
-title: josé hierro analysis
+title: fun youtube video
 category: spanish
 ---
-<li><a href="{{ site.url }}/assets/hierroanalysis_fisher.pdf">José Hierro Analysis</a></li>
-Written during my semester abroad in Salamanca, Spain, 
-this paper is an analysis of the poem, "Alucinación en Salamanca" written by José Hierro.
+<li><a href="https://www.youtube.com/watch?v=R90J8hQ_2Ik">Youtube Link</a></li>
+This is a video I made recently that combines a few of my interests into one:
+speaking spanish, playing drumset, and movie editing.
