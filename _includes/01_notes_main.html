@@ -15,7 +15,28 @@
 
     {% for category in categories %}
 
-        {% if category != "blog" and category != "research"%}
+        {% if category == "music"%}
+
+            <div class="coll">
+                <h3 align="center">{{ category | downcase }}</h3>
+
+                {% assign category_docs = collection.docs | where: "category", category %}
+                <ul class="list-items">
+                {% for item in category_docs %}
+                    {% if item.title %}
+                        <li><a href="{{ site.baseurl }}{{item.url}}" style="font-size:16px"> {{ item.title | downcase }} </a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+             </div>
+
+        {% endif %}
+
+    {% endfor %}
+<!-- start LIAM -->
+{% for category in categories %}
+
+        {% if category == "english" or category == "spanish" %}
 
             <div class="coll">
                 <h3 align="center">{{ category | downcase }}</h3>
@@ -38,13 +59,34 @@
         {% endif %}
 
     {% endfor %}
+    {% for category in categories %}
+
+        {% if category == "volunteer"%}
+
+            <div class="coll6">
+                <h3 align="center">{{ category | downcase }}</h3>
+
+                {% assign category_docs = collection.docs | where: "category", category %}
+                <ul class="list-items">
+                {% for item in category_docs %}
+                    {% if item.title %}
+                        <li><a href="{{ site.baseurl }}{{item.url}}" style="font-size:16px"> {{ item.title | downcase }} </a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+             </div>
+
+        {% endif %}
+
+    {% endfor %}
 {% endfor %}
+<!-- end LIAM -->
 
 <style>
 .coll {
     float: left;
     width: 33.33%;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .coll2 {
@@ -71,6 +113,11 @@
     padding-bottom: 50px;
 }
 
+.coll6 {
+    float: right;
+    width: 33.33%;
+    padding-bottom: 50px;
+}
 
 /* Clear floats after the columns */
 .roww:after {
